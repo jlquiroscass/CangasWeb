@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Establecimientos Red Cangas Sin Gluten</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="/assets/js/functionsEst.js"></script>
+		<script src="/assets/js/general.js"></script>
+		<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+		<link rel="icon" type="img/ico" href="/images/logoTrans.png">
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+		<meta property="og:image" content="https://cangassingluten.com/images/logo.jpg" />
+	</head>
+	<body class="is-loading">
+			<input type="hidden" id="nombre"/>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">CANGAS SIN GLUTEN</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Cangas Sin Gluten</a></li>
+							<li><a href="establecimientos.html">Establecimientos Adheridos</a></li>
+							<li class ="active" id="menuName"></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/cangassingluten/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/cangassingluten/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section>
+									<center>
+									<h2 id="titleNombre"></h2></center>
+
+									<div id="locales">
+										<span class="image fit" id="imageLocal"></span>
+									</div>
+									<center>
+										<div style="width:75%;height:400px;">
+											<div id="map"></div>
+										</div>
+									</center>
+
+							    <script>
+							      var map;
+							      function initMap() {
+							        map = new google.maps.Map(document.getElementById('map'), {
+							          center: {lat: 43.1044097, lng: -6.535644899999966},
+							          zoom: 12
+							        });
+							      }
+							    </script>
+							    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIyXUsDHkuEVn37Lno5T5PUTma-FwvtEU&callback=initMap"
+							    async defer></script>
+							</section>
+
+					</div>
+
+					<footer id="footer">
+						<section>
+							<center>
+								<img src="/images/ayto-cangasnarcea.png"/>
+								<img src="/images/celicidad100.png"/>
+							</center>
+						</section>
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:comunicacion@celicidad.net">comunicacion@celicidad.net</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/cangassingluten/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/cangassingluten/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Cangas Sin Gluten</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>

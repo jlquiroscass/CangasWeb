@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Cangas Sin Gluten - Establecimientos Adheridos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="/assets/js/functions.js"></script>
+		<script src="/assets/js/general.js"></script>
+		<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+		<link rel="icon" type="img/ico" href="/images/logoTrans.png">
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+		<meta property="og:url" content="https://cangassingluten.com/establecimientos,html" />
+		<meta property="og:title" content="Establecimientos Adheridos a la Red Cangas Sin Gluten" />
+		<meta property="og:image" content="https://cangassingluten.com/images/logo.jpg" />
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">CANGAS SIN GLUTEN</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Cangas Sin Gluten</a></li>
+							<li class="active"><a href="establecimientos.html">Establecimientos Adheridos</a></li>
+							<li><a href="/iii-jornadas">III Jornadas</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/cangassingluten/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/cangassingluten/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section>
+									<center>
+									<h2>ESTABLECIMIENTOS ADHERIDOS<br />
+									RED CANGAS SIN GLUTEN</h2></center>
+
+									<center>
+										<div style="width:100%;height:500px;">
+											<div id="map"></div>
+										</div>
+									</center>
+
+							    <script>
+							      var map;
+										var iwlastOpen;
+										var markers = [];
+							      function initMap() {
+											map = new google.maps.Map(document.getElementById('map'), {
+									        center: {lat: 43.181504, lng: -6.5578828},
+									        zoom: 10
+									    });
+											iwlastOpen = new google.maps.InfoWindow();
+							      }
+							    </script>
+							    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIyXUsDHkuEVn37Lno5T5PUTma-FwvtEU&callback=initMap"
+							    async defer></script>
+									<ul class="actions" style="margin-top: -60px;" >
+										<li><a href="#" onclick="showLocal(-1);return false;" class="button special" id="bt-1">TODOS</a></li>
+										<li><a href="#" onclick="showLocal(1);return false;" class="button" id="bt1">Restaurantes</a></li>
+										<li><a href="#" onclick="showLocal(0);return false;" class="button" id="bt0">Alojamientos</a></li>
+										<li><a href="#" onclick="showLocal(2);return false;" class="button" id="bt2">Tiendas</a></li>
+									</ul>
+									<div id="locales">
+										</div>
+							</section>
+
+					</div>
+
+					<footer id="footer">
+						<section>
+							<center>
+								<img src="/images/ayto-cangasnarcea.png"/>
+								<img src="/images/celicidad100.png"/>
+							</center>
+						</section>
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+									<p><a href="mailto:comunicacion@celicidad.net">comunicacion@celicidad.net</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/cangassingluten/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/cangassingluten/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Cangas Sin Gluten</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
